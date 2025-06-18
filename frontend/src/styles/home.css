@@ -43,7 +43,7 @@
         left: 50%;
         transform: translateX(-50%);
         opacity: 80%;
-        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.781));
+        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.603));
     }
     & .middle-info-description{
         display: flex;
@@ -57,9 +57,15 @@
 
 }
 
+#mga-tour-info-logo{
+    height: 350px;
+    top: -45%;
+    left: 51%;
+}
+
 #unipaper-info-logo{
-    height: 110px;
-    top: -2%;
+    height: 280px;
+    top: -30%;
     left: 51%;
 }
 
@@ -69,8 +75,8 @@
 }
 
 #school-travel-info-logo{
-    height: 120px;
-    top: -5%;
+    height: 250px;
+    top: -25%;
 }
 
 .logo-holding {
