@@ -1,20 +1,25 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body, html {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 100dvh;
   width: 100dvw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: url("./assets/background\ -\ 5959px\ \(pexels-davidgari-20798114\).jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
+  background-size: 110%;
 }
 
 body::before{
