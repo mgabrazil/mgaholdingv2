@@ -30,6 +30,7 @@
         color: white;
         height: 300px;
         width: 100%;
+        animation: showUp 1s linear;
     }
     & .middle-info-phrase h1{
         opacity: 85%;
@@ -42,6 +43,7 @@
         left: 50%;
         transform: translateX(-50%);
         opacity: 80%;
+        filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.781));
     }
     & .middle-info-description{
         display: flex;
@@ -63,7 +65,6 @@
 
 #usports-info-logo{
     height: 50px;
-    filter: drop-shadow(0px 4px 20px rgb(139, 139, 139));
     top: 8%;
 }
 
@@ -74,13 +75,19 @@
 
 .logo-holding {
     height: 18rem;
+    animation: showUp 1s linear;
 }
 
 h1 {
+    position: relative;
     margin-right: 20px;
     width: 400px;
     font-weight: 400;
     font-size: 29px;
+}
+
+.middle-info h1 {
+    animation: slideIn 1.5s linear;
 }
 
 .holding-bottom-cards{
@@ -96,14 +103,14 @@ h1 {
         display: flex;
         align-items: flex-end;
         filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.479));
-        opacity: 90%;
+        opacity: 92%;
         transition: .3s ease-in-out;
         cursor: pointer;
     }
     & .title-cards {
         position: absolute;
         padding: 10px;
-        color: rgba(255, 255, 255, 0.747);
+        color: rgba(255, 255, 255, 0.932);
         filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.863));;
     }
     & h2 {
@@ -159,6 +166,27 @@ h1 {
         opacity: 50%;
     }
     & .hover {
+        opacity: 100%;
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 85%;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        left: -80%;
+        opacity: 0%;
+    }
+
+    100% {
+        left: 0%;
         opacity: 100%;
     }
 }

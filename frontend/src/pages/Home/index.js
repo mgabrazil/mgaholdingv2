@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 import logoHolding from "../../assets/logo-mgasingle.png";
 import logoMgaTour from "../../assets/logo-mgatour.png";
@@ -44,6 +45,18 @@ export default function Home(){
         },
     }
 
+    const leaveTimeOut = useRef(null);
+
+    const handleMouseEnter = (cardInformation) => {
+        clearTimeout(leaveTimeOut.current);
+        setMouseOnCard(cardInformation);
+    };
+
+    const handleMouseLeave = () => {
+        leaveTimeOut.current = setTimeout(() => {
+            setMouseOnCard(null);
+        }, 80);
+    }
     
     return(
         <section className="home-section">
@@ -80,11 +93,11 @@ export default function Home(){
             <div className="bottom-container">
                 <div className="holding-bottom-cards">
 
-                    <div 
+                    <Link to="https://mgatourcorp.com" target="blank" 
                     className="card" 
                     id="cardMgaTour" 
-                    onMouseEnter={() => setMouseOnCard("mgaTour")}
-                    onMouseLeave={() => setMouseOnCard(null)}
+                    onMouseEnter={() => handleMouseEnter("mgaTour")}
+                    onMouseLeave={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Viagens</h2>
@@ -95,13 +108,13 @@ export default function Home(){
                             <img className="normal" src={cardMgaTour} />
                             <img className="hover" src={logoMgaTour} />
                         </div>
-                    </div>
+                    </Link>
 
-                    <div 
+                    <Link to="https://www.unipaperbsb.com.br" target="blank" 
                     className="card" 
                     id="cardUnipaper"
-                    onMouseEnter={() => setMouseOnCard("unipaper")}
-                    onMouseLeave={() => setMouseOnCard(null)}
+                    onMouseEnter={() => handleMouseEnter("unipaper")}
+                    onMouseLeave={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Utensílios</h2>
@@ -112,13 +125,13 @@ export default function Home(){
                             <img className="normal" src={cardUnipaper} />
                             <img className="hover" src={logoUnipaper} />
                         </div>
-                    </div>
+                    </Link>
                     
-                    <div 
+                    <Link to="#"
                     className="card" 
                     id="cardUsports"
-                    onMouseEnter={() => setMouseOnCard("usports")}
-                    onMouseLeave={() => setMouseOnCard(null)}
+                    onMouseEnter={() => handleMouseEnter("usports")}
+                    onMouseLeave={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Uniformes</h2>
@@ -129,13 +142,13 @@ export default function Home(){
                             <img className="normal" src={cardUsports} />
                             <img className="hover" id="cardLogoUsports" src={logoUsports} />
                         </div>
-                    </div>
+                    </Link>
 
-                    <div 
+                    <Link to="https://www.instagram.com/mgaschooltravel" target="blank"
                     className="card" 
                     id="cardSchoolTravel"
-                    onMouseEnter={() => setMouseOnCard("schoolTravel")}
-                    onMouseLeave={() => setMouseOnCard(null)}
+                    onMouseEnter={() => handleMouseEnter("schoolTravel")}
+                    onMouseLeave={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Passeios</h2>
@@ -147,7 +160,7 @@ export default function Home(){
                             <img className="hover" src={logoSchoolTravel} />
                         </div>
                         
-                    </div>
+                    </Link>
 
                 </div>
             </div>
