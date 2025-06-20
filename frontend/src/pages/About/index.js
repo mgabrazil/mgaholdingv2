@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 
+import aboutLogo from "../../assets/logo-mgasingle.png";
+
 import "../../styles/about.css";
 
 export default function About(){
     return(
         <section className="about-section">
             <div className="about-container">
+
+                <div className="about-logo">
+                    <img src={aboutLogo} />
+                </div>
 
                 <div className="about-info">
                     <p> Somos um grupo inovador que gerencia empresas, cujo nosso objetivo é incrementar a eficiência.</p>
