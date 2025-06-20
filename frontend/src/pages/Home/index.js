@@ -106,7 +106,7 @@ export default function Home(){
 
                         <div className="img-container-cards">
                             <img className="normal" src={cardMgaTour} />
-                            <img className="hover" src={logoMgaTour} />
+                            <img className="hover" id="cardLogoMgaTour" src={logoMgaTour} />
                         </div>
                     </Link>
 
@@ -123,7 +123,7 @@ export default function Home(){
 
                         <div className="img-container-cards">
                             <img className="normal" src={cardUnipaper} />
-                            <img className="hover" src={logoUnipaper} />
+                            <img className="hover" id="cardLogoUnipaper" src={logoUnipaper} />
                         </div>
                     </Link>
                     
@@ -157,7 +157,7 @@ export default function Home(){
 
                         <div className="img-container-cards">
                             <img className="normal" src={cardSchoolTravel} />
-                            <img className="hover" src={logoSchoolTravel} />
+                            <img className="hover" id="cardLogoSchoolTravel" src={logoSchoolTravel} />
                         </div>
                         
                     </Link>

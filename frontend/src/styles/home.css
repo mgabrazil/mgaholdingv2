@@ -152,10 +152,9 @@ h1 {
         object-position: center;
         z-index: -1;
         background-color: rgba(0, 0, 0, 0.603);
-        padding: 28px;
     }
     & #cardLogoUsports {
-        padding-top: 40px;
+        padding: 50px;
     }
 
 }
