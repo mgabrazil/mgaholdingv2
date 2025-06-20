@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+    .header-container{
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .header-options-container{
+        & {
+            width: 85dvw;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+    }
+}

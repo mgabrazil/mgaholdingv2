@@ -1,0 +1,250 @@
+@media screen and (min-width: 1920px) {
+    .middle-info {
+        height: 450px;
+    }
+    .middle-info-cards{
+        & {
+            padding: 0px 150px;
+            height: 450px;
+        }
+        & img {
+            transform: translateX(-55%);
+        }
+    }
+
+    #mga-tour-info-logo{
+        height: 450px;
+        top: -10%;
+    }
+
+    #unipaper-info-logo{
+        height: 350px;
+        top: 2%;
+    }
+
+    #usports-info-logo{
+        height: 55px;
+        top: 30%;
+        left: 52%;
+    }
+
+    #school-travel-info-logo{
+        height: 350px;
+        top: 0%;
+        left: 52%;
+    }
+
+    .logo-holding {
+        height: 20rem;
+    }
+
+    h1 {
+        width: 500px;
+        font-size: 35px;
+    }
+
+    .holding-bottom-cards{
+        gap: 25px;
+        margin-bottom: 80px;
+    }
+
+    .card{
+        & .title-cards {
+            padding: 12px 15px;
+        }
+        & h2 {
+            font-size: 1.2rem;
+        }
+        & h3 {
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+        & .img-container-cards{
+            height: 200px;
+            width: 280px;
+        }
+        & .normal{
+            opacity: 100%;
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            z-index: -1;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    body {
+        background-position: 45%;
+        background-size: cover;
+    }
+
+    .home-section{
+        justify-content: flex-start;
+        gap: 100px;
+    }
+
+    .middle-info {
+        height: 250px;
+    }
+
+    .middle-info-cards{
+        & {
+            top: 90px;
+            height: 250px;
+        }
+        & .middle-info-description{
+            line-height: 30px;
+            font-size: 1rem;
+        }
+    }
+    #mga-tour-info-logo{
+        height: 350px;
+        top: -70%;
+        left: 51%;
+    }
+    #unipaper-info-logo{
+        top: -45%;
+        left: 51%;
+    }
+
+    #usports-info-logo{
+        height: 45px;
+        top: 0%;
+    }
+
+    #school-travel-info-logo{
+        height: 220px;
+        top:-30%;
+        left: 54%;
+    }
+
+    .logo-holding {
+        height: 12rem;
+    }
+
+    h1 {
+        margin-right: 15px;
+        width: 300px;
+        font-size: 22px;
+    }
+
+    .bottom-container{
+        width: 90dvw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .holding-bottom-cards{
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 30px;
+        justify-items: center;
+    }
+    .card{
+        & .img-container-cards{
+            height: 190px;
+            width: 290px;
+        }
+        & #cardLogoUsports {
+            padding: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-position: 50%;
+        background-size: cover;
+    }
+    .home-section{
+        align-items: center;
+        gap: 80px;
+    }
+
+    .middle-info {
+        height: 200px;
+        width: 80dvw;
+        flex-direction: column-reverse;
+        filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.521));
+    }
+    .middle-info-cards{
+        & {
+            top: 70px;
+            flex-direction: column;
+            justify-content: center;
+            height: 200px;
+            filter: drop-shadow(0px 4px 60px rgba(0, 0, 0, 1));
+        }
+        & .middle-info-description{
+            margin-top: 15px;
+            line-height: 30px;
+            text-align: center;
+            font-size: .8rem;
+        }
+    }
+
+    .middle-info-phrase h1{
+        font-size: 14px;
+        line-height: 8px;
+        font-weight: 600;
+    }
+    
+    #mga-tour-info-logo{
+        height: 200px;
+        top: -65%;
+        left: 50%;
+    }
+
+    #unipaper-info-logo{
+        height: 200px;
+        top: -55%;
+        left: 50%;
+    }
+
+    #usports-info-logo{
+        height: 30px;
+        top: -15%;
+    }
+
+    #school-travel-info-logo{
+        height: 180px;
+        top: -45%;
+    }
+
+    .logo-holding {
+        height: 7rem;
+    }
+
+    h1 {
+        position: relative;
+        text-align: center;
+        margin-right: 0;
+        width: 300px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .bottom-container{
+        width: 90dvw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .holding-bottom-cards{
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+    .card{
+        & .img-container-cards{
+            height: 18vh;
+            width: 45vw;
+        }
+    }
+
+}

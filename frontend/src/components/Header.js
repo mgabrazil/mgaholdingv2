@@ -12,8 +12,8 @@ export default function Header(){
 
                 <div className="header-logo-container">
 
-                    <img src={headerCircle} id="header-circle" />
-                    <img src={headerLogo}  id="header-logo"/>
+                    <Link to="/"><img src={headerCircle} id="header-circle" /></Link>
+                    <Link to="/"><img src={headerLogo}  id="header-logo"/></Link>
 
                 </div>
 
