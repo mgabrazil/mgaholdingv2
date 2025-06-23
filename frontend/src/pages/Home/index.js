@@ -1,5 +1,6 @@
-import { useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useState, useRef, use } from "react";
+
+import { toast } from "react-toastify";
 
 import logoHolding from "../../assets/images/logo-mgasingle.png";
 import logoMgaTour from "../../assets/images/logo-mgatour.png";
@@ -25,24 +26,32 @@ export default function Home(){
             logo: logoMgaTour,
             description: ["Atendimento empresarial", "Pacotes Personalizados", "Suporte Diário", "Planejamento de Itinerários", "Serviços Adicionais"],
             imgID: "mga-tour-info-logo",
+            link: 'https://mgatourcorp.com',
+            name: 'MGA Tour',
         },
         unipaper: {
             title: ["Muito mais que", "uma papelaria."],
             logo: logoUnipaper,
             description: ["Materiais escolares", "Uniformes Escolares", "Soluções Criativas"],
             imgID: "unipaper-info-logo",
+            link: "https://www.unipaperbsb.com.br",
+            name: 'Unipaper',
         },
         usports: {
             title: ["Seu time,", "sua identidade."],
             logo: logoUsports,
             description: ["Uniformes Personalizados", "Designs Exclusivos", "Qualidade", "Entrega Rápida"],
             imgID: "usports-info-logo",
+            link: "#",
+            name: 'Usports',
         },
         schoolTravel: {
             title: ["Conforto e", "segurança para estudantes."],
             logo: logoSchoolTravel,
             description: ["Viagens Escolares", "Passeios Escolares"],
             imgID: "school-travel-info-logo",
+            link: "https://www.instagram.com/mgaschooltravel",
+            name: 'School Travel',
         },
     }
 
@@ -57,6 +66,16 @@ export default function Home(){
         leaveTimeOut.current = setTimeout(() => {
             setMouseOnCard(null);
         }, 80);
+    }
+
+    function handleDelay(e, url, name) {
+        e.preventDefault();
+        
+        toast.success(`Abrindo página da ${name}`, e)
+
+        setTimeout(() => {
+            window.open(url);
+        }, 1000);
     }
 
     return(
@@ -93,8 +112,9 @@ export default function Home(){
 
             <div className="bottom-container">
                 <div className="holding-bottom-cards">
-
-                    <Link to="https://mgatourcorp.com" target="blank" 
+                
+                    <a href={cardsInfo['mgaTour'].link} target="blank" 
+                    onClick={(e) => handleDelay(e, cardsInfo['mgaTour'].link, cardsInfo['mgaTour'].name)} 
                     className="card" 
                     id="cardMgaTour" 
                     onMouseEnter={() => handleMouseEnter("mgaTour")}
@@ -109,9 +129,10 @@ export default function Home(){
                             <img className="normal" src={cardMgaTour} />
                             <img className="hover" id="cardLogoMgaTour" src={logoMgaTour} />
                         </div>
-                    </Link>
+                    </a>
 
-                    <Link to="https://www.unipaperbsb.com.br" target="blank" 
+                    <a href={cardsInfo['unipaper'].link} target="blank" 
+                    onClick={(e) => handleDelay(e, cardsInfo['unipaper'].link, cardsInfo['unipaper'].name)}
                     className="card" 
                     id="cardUnipaper"
                     onMouseEnter={() => handleMouseEnter("unipaper")}
@@ -126,9 +147,10 @@ export default function Home(){
                             <img className="normal" src={cardUnipaper} />
                             <img className="hover" id="cardLogoUnipaper" src={logoUnipaper} />
                         </div>
-                    </Link>
+                    </a>
                     
-                    <Link to="#"
+                    <a href={cardsInfo['usports'].link}
+                    onClick={(e) => handleDelay(e, cardsInfo['usports'].link, cardsInfo['usports'].name)}
                     className="card" 
                     id="cardUsports"
                     onMouseEnter={() => handleMouseEnter("usports")}
@@ -143,9 +165,11 @@ export default function Home(){
                             <img className="normal" src={cardUsports} />
                             <img className="hover" id="cardLogoUsports" src={logoUsports} />
                         </div>
-                    </Link>
+                    </a>
 
-                    <Link to="https://www.instagram.com/mgaschooltravel" target="blank"
+                    <a href={cardsInfo['schoolTravel'].link} 
+                    target="blank"
+                    onClick={(e) => handleDelay(e, cardsInfo['schoolTravel'].link, cardsInfo['schoolTravel'].name)}
                     className="card" 
                     id="cardSchoolTravel"
                     onMouseEnter={() => handleMouseEnter("schoolTravel")}
@@ -161,7 +185,7 @@ export default function Home(){
                             <img className="hover" id="cardLogoSchoolTravel" src={logoSchoolTravel} />
                         </div>
                         
-                    </Link>
+                    </a>
 
                 </div>
             </div>
