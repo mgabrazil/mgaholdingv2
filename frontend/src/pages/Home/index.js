@@ -1,16 +1,16 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import logoHolding from "../../assets/logo-mgasingle.png";
-import logoMgaTour from "../../assets/logo-mgatour.png";
-import logoUnipaper from "../../assets/logo-unipaper.png";
-import logoUsports from "../../assets/logo-usports.png";
-import logoSchoolTravel from "../../assets/logo-schooltravel.png";
+import logoHolding from "../../assets/images/logo-mgasingle.png";
+import logoMgaTour from "../../assets/images/logo-mgatour.png";
+import logoUnipaper from "../../assets/images/logo-unipaper.png";
+import logoUsports from "../../assets/images/logo-usports.png";
+import logoSchoolTravel from "../../assets/images/logo-schooltravel.png";
 
-import cardMgaTour from "../../assets/tag-viagem(pexels-vincent-gerbouin-445991-1167021).jpg";
-import cardUnipaper from "../../assets/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.png";
-import cardUsports from "../../assets/tag-sports(pexels-omar-ramadan-1739260-30726604).jpg";
-import cardSchoolTravel from "../../assets/tag-schooltrip(pexels-wai-sing-278507525-26563309).jpg";
+import cardMgaTour from "../../assets/images/tag-viagem(pexels-vincent-gerbouin-445991-1167021).jpg";
+import cardUnipaper from "../../assets/images/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.png";
+import cardUsports from "../../assets/images/tag-sports(pexels-omar-ramadan-1739260-30726604).jpg";
+import cardSchoolTravel from "../../assets/images/tag-schooltrip(pexels-wai-sing-278507525-26563309).jpg";
 
 import "../../styles/home.css";
 import '../../styles/mediaQuery-home.css';
@@ -58,7 +58,7 @@ export default function Home(){
             setMouseOnCard(null);
         }, 80);
     }
-    
+
     return(
         <section className="home-section">
 

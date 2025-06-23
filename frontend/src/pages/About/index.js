@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
-import aboutLogo from "../../assets/logo-mgasingle.png";
+import aboutLogo from "../../assets/images/logo-mgasingle.png";
+
+import { ReactComponent as ArrowIcon } from "../../assets/icons/arrow_right.svg";
 
 import "../../styles/about.css";
 import '../../styles/mediaQuery-about.css';
@@ -21,7 +23,7 @@ export default function About(){
 
                 <div className="link-container">
                     <Link to="/">Conheça as empresas gerenciadas pela MGA Holding</Link>
-                    <span class="material-symbols-outlined">arrow_right</span>
+                    <ArrowIcon id='info-arrow-icon'/>
                 </div>
             </div>
         </section>
