@@ -13,6 +13,7 @@ import cardUsports from "../../assets/tag-sports(pexels-omar-ramadan-1739260-307
 import cardSchoolTravel from "../../assets/tag-schooltrip(pexels-wai-sing-278507525-26563309).jpg";
 
 import "../../styles/home.css";
+import '../../styles/mediaQuery-home.css';
 
 export default function Home(){
 

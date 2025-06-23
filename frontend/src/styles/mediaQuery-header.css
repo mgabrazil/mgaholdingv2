@@ -3,14 +3,36 @@
         align-items: flex-start;
         flex-direction: column;
         justify-content: center;
-        padding: 25px;
+        padding: 30px 0px;
+    }
+
+    .header-logo-container{
+        & {
+            position: relative;
+            left: 2%;
+        }
+        & #header-circle{
+            height: 40px;
+        }
+        & #header-logo{
+            height: 40px;
+        }
     }
 
     .header-options-container{
         & {
-            width: 85dvw;
-            margin-top: 20px;
-            justify-content: space-around;
+            width: 100dvw;
+            padding: 5px;
+            margin-top: 15px;
+            justify-content: space-evenly;
+            background-color: rgba(168, 130, 73, 0.39);
+            font-size: 14px;
+        }
+        & a{
+            color: rgba(255, 255, 255, 0.849);
+        }
+        & a:hover{
+            color: rgb(255, 255, 255);
         }
     }
 }

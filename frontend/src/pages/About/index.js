@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import aboutLogo from "../../assets/logo-mgasingle.png";
 
 import "../../styles/about.css";
+import '../../styles/mediaQuery-about.css';
 
 export default function About(){
     return(

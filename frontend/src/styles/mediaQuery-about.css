@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    
+    .about-container{
+        padding: 30px;
+        margin-bottom: 0px;
+    }
+    .about-logo img{
+        height: 6rem;
+    }
+    .about-info{
+        font-size: 1.4ch;
+    }
+    .link-container{
+        font-size: 12px;
+        padding: 8px 25px;
+        width: 340px;
+    }
+}

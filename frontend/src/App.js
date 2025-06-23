@@ -3,7 +3,6 @@ import RoutesApp from './routes';
 import Header from './components/Header';
 
 import './App.css';
-import './styles/mediaQuery-home.css';
 import './styles/mediaQuery-header.css';
 
 function App() {
