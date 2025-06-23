@@ -1,4 +1,10 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 996px){
+    .header-options-container{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .header-container{
         align-items: flex-start;
         flex-direction: column;
@@ -34,5 +40,16 @@
         & a:hover{
             color: rgb(255, 255, 255);
         }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .header-container{
+            padding: 10px 0px;
+    }    
+    .header-options-container{
+        margin-top: 10px;
+        font-size: 11px;
     }
 }

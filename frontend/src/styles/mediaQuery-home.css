@@ -155,14 +155,13 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     body {
         background-position: 50%;
-        background-size: cover;
     }
     .home-section{
         align-items: center;
-        gap: 80px;
+        gap: 40px;
     }
 
     .middle-info {
@@ -216,7 +215,7 @@
     }
 
     .logo-holding {
-        height: 7rem;
+        height: 6.5rem;
     }
 
     h1 {
@@ -224,7 +223,7 @@
         text-align: center;
         margin-right: 0;
         width: 300px;
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 15px;
     }
     .bottom-container{
@@ -246,5 +245,47 @@
             width: 45vw;
         }
     }
+    .middle-info-cards{
+        & {
+            top: 0px;
+        }
+        & h1, img {
+            display: none;
+        }
+    }  
+}
 
+@media screen and (max-width: 360px) {
+    .home-section{
+        align-items: center;
+        gap: 20px;
+    }
+    .logo-holding {
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home-section{
+        align-items: center;
+        gap: 0px;
+    }
+    .logo-holding {
+        height: 4rem;
+    }   
+    h1{
+        font-size: 14px;
+    }  
+    .card{
+        & #cardLogoUsports {
+            padding: 34px;
+        }
+        & h2 {
+            font-size: .9rem;
+            font-weight: 600;
+        }
+        & h3 {
+            font-size: 0.7rem;
+        }
+    }
 }

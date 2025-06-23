@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     
     .about-container{
         padding: 30px;
@@ -14,5 +14,22 @@
         font-size: 12px;
         padding: 8px 25px;
         width: 340px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about-container{
+        padding: 10px;
+    }
+    .about-logo img{
+        height: 5rem;
+    }
+    .about-info{
+        font-size: 1.3ch;
+    }
+    .link-container{
+        font-size: 10px;
+        padding: 8px 25px;
+        width: 290px;
     }
 }
