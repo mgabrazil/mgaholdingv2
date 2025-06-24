@@ -227,7 +227,7 @@
         margin-top: 15px;
     }
     .bottom-container{
-        width: 90dvw;
+        width: fit-content;
         display: flex;
         justify-content: center;
     }
@@ -287,5 +287,28 @@
         & h3 {
             font-size: 0.7rem;
         }
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        scale: 1.1;
+        filter: drop-shadow(0px 5px 30px rgba(255,255,255,0.63));
+    }
+    .card:hover .title-cards {
+        display: none;
+    }
+    .card:hover .normal {
+        opacity: 50%;
+    }
+    .card:hover .hover {
+        opacity: 100%;
+    }
+}
+
+@media (hover: none) {
+    .card:hover,
+    .card:focus {
+        scale: none !important;
     }
 }
