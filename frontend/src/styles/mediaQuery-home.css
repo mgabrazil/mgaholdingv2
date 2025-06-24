@@ -13,24 +13,24 @@
     }
 
     #mga-tour-info-logo{
-        height: 450px;
-        top: -10%;
+        height: 200px;
+        top: 10%;
     }
 
     #unipaper-info-logo{
-        height: 350px;
-        top: 2%;
+        height: 170px;
+        top: 15%;
     }
 
     #usports-info-logo{
-        height: 55px;
-        top: 30%;
+        height: 180px;
+        top: 15%;
         left: 52%;
     }
 
     #school-travel-info-logo{
-        height: 350px;
-        top: 0%;
+        height: 140px;
+        top: 17%;
         left: 52%;
     }
 
@@ -101,23 +101,20 @@
         }
     }
     #mga-tour-info-logo{
-        height: 350px;
-        top: -70%;
+        top: -27%;
         left: 51%;
     }
     #unipaper-info-logo{
-        top: -45%;
+        top: -10%;
         left: 51%;
     }
 
     #usports-info-logo{
-        height: 45px;
-        top: 0%;
+        top: -25%;
     }
 
     #school-travel-info-logo{
-        height: 220px;
-        top:-30%;
+        top: -5%;
         left: 54%;
     }
 
@@ -149,8 +146,8 @@
             height: 190px;
             width: 290px;
         }
-        & #cardLogoUsports {
-            padding: 80px;
+        & .hover {
+            padding: 40px;
         }
     }
 }
@@ -191,28 +188,6 @@
         line-height: 8px;
         font-weight: 600;
     }
-    
-    #mga-tour-info-logo{
-        height: 200px;
-        top: -65%;
-        left: 50%;
-    }
-
-    #unipaper-info-logo{
-        height: 200px;
-        top: -55%;
-        left: 50%;
-    }
-
-    #usports-info-logo{
-        height: 30px;
-        top: -15%;
-    }
-
-    #school-travel-info-logo{
-        height: 180px;
-        top: -45%;
-    }
 
     .logo-holding {
         height: 6.5rem;
@@ -243,6 +218,9 @@
         & .img-container-cards{
             height: 18vh;
             width: 45vw;
+        }
+        & .hover {
+            padding: 25px;
         }
     }
     .middle-info-cards{
@@ -277,9 +255,6 @@
         font-size: 14px;
     }  
     .card{
-        & #cardLogoUsports {
-            padding: 34px;
-        }
         & h2 {
             font-size: .9rem;
             font-weight: 600;
@@ -292,7 +267,7 @@
 
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
-        scale: 1.1;
+        scale: 1.03;
         filter: drop-shadow(0px 5px 30px rgba(255,255,255,0.63));
     }
     .card:hover .title-cards {

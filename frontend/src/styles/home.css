@@ -16,6 +16,7 @@
     color: white;
     opacity: 88%;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.37));
+    pointer-events: none;
 }
 
 .middle-info-cards{
@@ -31,6 +32,7 @@
         height: 300px;
         width: 100%;
         animation: showUp 1s linear;
+        pointer-events: none;
     }
     & .middle-info-phrase h1{
         opacity: 85%;
@@ -58,24 +60,22 @@
 }
 
 #mga-tour-info-logo{
-    height: 320px;
-    top: -42%;
+    height: 130px;
 }
 
 #unipaper-info-logo{
-    height: 250px;
-    top: -28%;
+    height: 110px;
+    top: -5%;
     left: 51%;
 }
 
 #usports-info-logo{
-    height: 40px;
-    top: 5%;
+    height: 140px;
 }
 
 #school-travel-info-logo{
-    height: 220px;
-    top: -25%;
+    height: 90px;
+    top: -5%;
 }
 
 .logo-holding {
@@ -95,6 +95,7 @@ h1 {
     animation: slideIn 1.5s linear;
 }
 
+
 .holding-bottom-cards{
     width: 80dvw;
     display: flex;
@@ -111,6 +112,7 @@ h1 {
         opacity: 92%;
         transition: .3s ease-in-out;
         cursor: pointer;
+        overflow: hidden;
     }
     & .title-cards {
         position: absolute;
@@ -139,7 +141,7 @@ h1 {
         width: 100%;
         object-fit: cover;
         object-position: bottom;
-        z-index: -1;
+        /*z-index: -1;*/
     }
     & .hover {
         opacity: 0%;
@@ -149,18 +151,15 @@ h1 {
         width: 100%;
         object-fit: contain;
         object-position: center;
-        z-index: -1;
+        /*z-index: -1;*/
         background-color: rgba(0, 0, 0, 0.603);
-    }
-    & #cardLogoUsports {
         padding: 50px;
     }
-
 }
 
 .card:active{
     & {
-        scale: 1.1;
+        scale: 1.03;
         filter: drop-shadow(0px 5px 30px rgba(255, 255, 255, 0.63));
     }
     & .title-cards{
