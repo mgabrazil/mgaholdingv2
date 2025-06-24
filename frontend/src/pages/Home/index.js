@@ -117,8 +117,8 @@ export default function Home(){
                     onClick={(e) => handleDelay(e, cardsInfo['mgaTour'].link, cardsInfo['mgaTour'].name)} 
                     className="card" 
                     id="cardMgaTour" 
-                    onMouseEnter={() => handleMouseEnter("mgaTour")}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseMove={() => handleMouseEnter('mgaTour')}
+                    onMouseOut={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Viagens</h2>
@@ -135,8 +135,8 @@ export default function Home(){
                     onClick={(e) => handleDelay(e, cardsInfo['unipaper'].link, cardsInfo['unipaper'].name)}
                     className="card" 
                     id="cardUnipaper"
-                    onMouseEnter={() => handleMouseEnter("unipaper")}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseMove={() => handleMouseEnter('unipaper')}
+                    onMouseOut={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Utensílios</h2>
@@ -153,8 +153,8 @@ export default function Home(){
                     onClick={(e) => handleDelay(e, cardsInfo['usports'].link, cardsInfo['usports'].name)}
                     className="card" 
                     id="cardUsports"
-                    onMouseEnter={() => handleMouseEnter("usports")}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseMove={() => handleMouseEnter('usports')}
+                    onMouseOut={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Uniformes</h2>
@@ -172,8 +172,8 @@ export default function Home(){
                     onClick={(e) => handleDelay(e, cardsInfo['schoolTravel'].link, cardsInfo['schoolTravel'].name)}
                     className="card" 
                     id="cardSchoolTravel"
-                    onMouseEnter={() => handleMouseEnter("schoolTravel")}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseMove={() => handleMouseEnter('schoolTravel')}
+                    onMouseOut={handleMouseLeave}
                     >
                         <div className="title-cards">
                             <h2>Passeios</h2>
