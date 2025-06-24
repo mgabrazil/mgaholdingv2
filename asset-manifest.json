@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mgaholdingv2/static/css/main.43ada72a.css",
-    "main.js": "/mgaholdingv2/static/js/main.82fab905.js",
+    "main.js": "/mgaholdingv2/static/js/main.c8ca9377.js",
     "static/media/background - 5959px (pexels-davidgari-20798114).jpg": "/mgaholdingv2/static/media/background - 5959px (pexels-davidgari-20798114).f56024933e78f5a10d5c.jpg",
     "static/media/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.png": "/mgaholdingv2/static/media/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.46b90ebf1ea5ac860ccc.png",
     "static/media/tag-schooltrip(pexels-wai-sing-278507525-26563309).jpg": "/mgaholdingv2/static/media/tag-schooltrip(pexels-wai-sing-278507525-26563309).698f1d7d110a70a2e99c.jpg",
@@ -16,10 +16,10 @@
     "index.html": "/mgaholdingv2/index.html",
     "static/media/arrow_right.svg": "/mgaholdingv2/static/media/arrow_right.80d0e666891c82d476898d8473f867a0.svg",
     "main.43ada72a.css.map": "/mgaholdingv2/static/css/main.43ada72a.css.map",
-    "main.82fab905.js.map": "/mgaholdingv2/static/js/main.82fab905.js.map"
+    "main.c8ca9377.js.map": "/mgaholdingv2/static/js/main.c8ca9377.js.map"
   },
   "entrypoints": [
     "static/css/main.43ada72a.css",
-    "static/js/main.82fab905.js"
+    "static/js/main.c8ca9377.js"
   ]
 }
