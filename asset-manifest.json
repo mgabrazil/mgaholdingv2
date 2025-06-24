@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mgaholdingv2/static/css/main.90c464b6.css",
+    "main.css": "/mgaholdingv2/static/css/main.37b5cee8.css",
     "main.js": "/mgaholdingv2/static/js/main.1536d5ba.js",
     "static/media/background - 5959px (pexels-davidgari-20798114).jpg": "/mgaholdingv2/static/media/background - 5959px (pexels-davidgari-20798114).f56024933e78f5a10d5c.jpg",
     "static/media/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.png": "/mgaholdingv2/static/media/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.46b90ebf1ea5ac860ccc.png",
@@ -15,11 +15,11 @@
     "static/media/logo-mgasingle.png": "/mgaholdingv2/static/media/logo-mgasingle.e8bbd6107f2422f7b7af.png",
     "index.html": "/mgaholdingv2/index.html",
     "static/media/arrow_right.svg": "/mgaholdingv2/static/media/arrow_right.80d0e666891c82d476898d8473f867a0.svg",
-    "main.90c464b6.css.map": "/mgaholdingv2/static/css/main.90c464b6.css.map",
+    "main.37b5cee8.css.map": "/mgaholdingv2/static/css/main.37b5cee8.css.map",
     "main.1536d5ba.js.map": "/mgaholdingv2/static/js/main.1536d5ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.90c464b6.css",
+    "static/css/main.37b5cee8.css",
     "static/js/main.1536d5ba.js"
   ]
 }
