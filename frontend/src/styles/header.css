@@ -4,6 +4,7 @@
     left: 0;
     width: 100%;
     height: 15dvh;
+    min-height: 15dvh;
 }
 
 .header-container{
@@ -18,10 +19,10 @@
 
     }
     & #header-circle{
-        height: 50px;
+        height: 60px;
     }
     & #header-logo{
-        height: 50px;
+        height: 60px;
     }
 }
 

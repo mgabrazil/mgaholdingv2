@@ -75,7 +75,7 @@ export default function Home(){
 
         setTimeout(() => {
             window.open(url);
-        }, 1000);
+        }, 1500);
     }
 
     return(

@@ -59,18 +59,17 @@
             font-size: 0.9rem;
             font-weight: 300;
         }
-        & .img-container-cards{
-            height: 200px;
-            width: 280px;
-        }
-        & .normal{
-            opacity: 100%;
-            border-radius: 15px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: bottom;
-            z-index: -1;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+
+    .card{
+        & {
+            height: 22dvh;
+            width: 18dvw;
+            max-height: 24dvh;
+            max-width: 19dvw;
         }
     }
 }
@@ -129,26 +128,30 @@
     }
 
     .bottom-container{
-        width: 90dvw;
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 45dvh;
+        width: 100dvw;
+        overflow: hidden;
     }
 
     .holding-bottom-cards{
-        width: fit-content;
+        width: 78dvw;
+        max-width: 100dvw;
+        max-height: 45dvh;
+        gap: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px 30px;
-        justify-items: center;
+        margin-bottom: 0px;
     }
+
     .card{
-        & .img-container-cards{
-            height: 190px;
-            width: 290px;
-        }
-        & .hover {
-            padding: 40px;
-        }
+        height: 19dvh;
+        width: 32dvw;
+        max-height: 25dvh;
+        max-width: 35dvw;
+        justify-self: center;
     }
 }
 
@@ -201,28 +204,7 @@
         font-size: 18px;
         margin-top: 15px;
     }
-    .bottom-container{
-        width: fit-content;
-        display: flex;
-        justify-content: center;
-    }
 
-    .holding-bottom-cards{
-        width: fit-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        justify-items: center;
-    }
-    .card{
-        & .img-container-cards{
-            height: 18vh;
-            width: 45vw;
-        }
-        & .hover {
-            padding: 25px;
-        }
-    }
     .middle-info-cards{
         & {
             top: 0px;
@@ -231,8 +213,45 @@
             display: none;
         }
     }  
+
+    .bottom-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40dvh;
+        width: 100dvw;
+        overflow: hidden;
+    }
+
+    .holding-bottom-cards{
+        width: 95dvw;
+        max-width: 100dvw;
+        max-height: 45dvh;
+        gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0px;
+    }
+
+    .card{
+        & {
+            height: 16dvh;
+            width: 40dvw;
+            max-height: 25dvh;
+            max-width: 40dvw;
+            justify-self: center;
+        }
+        & h2 {
+            font-size: .95rem;
+        }
+        & h3 {
+            font-size: 0.75rem;
+            font-weight: 300;
+        }
+    }
 }
 
+/*
 @media screen and (max-width: 360px) {
     .home-section{
         align-items: center;
@@ -242,6 +261,7 @@
         height: 6rem;
     }
 }
+*/
 
 @media screen and (max-width: 320px) {
     .home-section{
@@ -254,17 +274,37 @@
     h1{
         font-size: 14px;
     }  
+    .bottom-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40dvh;
+        width: 100dvw;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+    .holding-bottom-cards{
+        width: 95dvw;
+        max-width: 100dvw;
+        max-height: 45dvh;
+        gap: 8px;
+    }
     .card{
+        & {
+            height: 17dvh;
+            filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.479));
+        }
         & h2 {
-            font-size: .9rem;
-            font-weight: 600;
+            font-size: .8rem;
         }
         & h3 {
-            font-size: 0.7rem;
+            font-size: 0.6rem;
         }
     }
 }
 
+/*
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
         scale: 1.03;
@@ -287,3 +327,4 @@
         scale: none !important;
     }
 }
+*/
