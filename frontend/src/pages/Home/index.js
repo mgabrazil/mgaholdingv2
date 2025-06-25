@@ -65,7 +65,7 @@ export default function Home(){
     const handleMouseLeave = () => {
         leaveTimeOut.current = setTimeout(() => {
             setMouseOnCard(null);
-        }, 80);
+        }, 100);
     }
 
     function handleDelay(e, url, name) {
