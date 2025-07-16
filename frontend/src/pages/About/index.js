@@ -22,8 +22,9 @@ export default function About(){
                 </div>
 
                 <div className="link-container">
-                    <Link to="/">Conheça as empresas gerenciadas pela MGA Holding</Link>
+                    <Link to="/">Conheça as empresas gerenciadas pela MGA Holding
                     <ArrowIcon id='info-arrow-icon'/>
+                    </Link>
                 </div>
             </div>
         </section>
