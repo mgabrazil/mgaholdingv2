@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mgaholdingv2/static/css/main.743a58bb.css",
-    "main.js": "/mgaholdingv2/static/js/main.96189653.js",
+    "main.css": "/mgaholdingv2/static/css/main.20217b89.css",
+    "main.js": "/mgaholdingv2/static/js/main.923198f3.js",
     "static/media/background - 5959px (pexels-davidgari-20798114).jpg": "/mgaholdingv2/static/media/background - 5959px (pexels-davidgari-20798114).f56024933e78f5a10d5c.jpg",
     "static/media/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.png": "/mgaholdingv2/static/media/tag-escolares(pexels-karolina-grabowska-54122290)-mirror.46b90ebf1ea5ac860ccc.png",
     "static/media/tag-schooltrip(pexels-wai-sing-278507525-26563309).jpg": "/mgaholdingv2/static/media/tag-schooltrip(pexels-wai-sing-278507525-26563309).698f1d7d110a70a2e99c.jpg",
@@ -15,11 +15,11 @@
     "static/media/logo-usports.png": "/mgaholdingv2/static/media/logo-usports.a071b633d0b8389346b1.png",
     "index.html": "/mgaholdingv2/index.html",
     "static/media/arrow_right.svg": "/mgaholdingv2/static/media/arrow_right.80d0e666891c82d476898d8473f867a0.svg",
-    "main.743a58bb.css.map": "/mgaholdingv2/static/css/main.743a58bb.css.map",
-    "main.96189653.js.map": "/mgaholdingv2/static/js/main.96189653.js.map"
+    "main.20217b89.css.map": "/mgaholdingv2/static/css/main.20217b89.css.map",
+    "main.923198f3.js.map": "/mgaholdingv2/static/js/main.923198f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.743a58bb.css",
-    "static/js/main.96189653.js"
+    "static/css/main.20217b89.css",
+    "static/js/main.923198f3.js"
   ]
 }
